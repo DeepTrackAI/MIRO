@@ -5,6 +5,10 @@
 ## How it works?
 **MIRO** employs recurrent graph neural networks (rGNNs) to learn a transformation that squeezes localization belonging to the same cluster toward a common center, resulting in a compact representation of clusters within the SMLM point cloud.
 
+<div align="center">
+  <img src="assets/MIRO.png" width="500"/>
+</div>
+
 ## Potential of MIRO  
 - **Improved Clustering Performance:** MIRO increases the efficiency of existing clustering algorithms by transforming point clouds into an optimized format.  
 - **Simplified Parameter Selection:** By enhancing the differentiation among clusters and their separation from the background, **MIRO** streamlines parameter selection for clustering methods like DBSCAN.
