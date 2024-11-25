@@ -3,7 +3,7 @@
 **MIRO** (Multimodal Integration through Relational Optimization) is a geometric deep learning framework that enhances clustering algorithms by transforming complex point clouds into an optimized structure amenable to conventional clustering methods. 
 
 ## How it works?
-**MIRO** employs recurrent graph neural networks (rGNNs) to learn a transformation that squeezes localization belonging to the same cluster toward a common center, resulting in a compact representation of clusters within the SMLM point cloud.
+**MIRO** employs recurrent graph neural networks (rGNNs) to learn a transformation that squeezes localization belonging to the same cluster toward a common center, resulting in a compact representation of clusters within the point cloud.
 
 <div align="center">
   <img src="assets/MIRO.png" width="500"/>
