@@ -12,13 +12,13 @@ from torch_geometric.transforms import AddLaplacianEigenvectorPE
 class CreateGraphDataset:
     def __init__(
         self,
-        training_data,
+        training_cluster,
         dataset_size=512,
         noise_point_range=(150, 250),
         cluster_count_range=(10, 20),
         connectivity_radius=1.0,
     ):
-        self.training_data = training_data
+        self.training_cluster = training_cluster
         self.dataset_size = dataset_size
         self.noise_point_range = noise_point_range
         self.cluster_count_range = cluster_count_range
@@ -27,6 +27,8 @@ class CreateGraphDataset:
         self.laplacian_embedding = AddLaplacianEigenvectorPE(
             5, attr_name="x", is_undirected=True
         )
+
+        self.training_data = self.populate_cluster(training_cluster)
 
     def __call__(self):
         return self.generate_dataset()
@@ -60,20 +62,26 @@ class CreateGraphDataset:
         for shift in random_shifts:
             cluster = self.sample_random_cluster()
             rotated_cluster = self.apply_random_rotation(cluster)
-
-            internal_shift = np.random.normal(0, 0.05, size=rotated_cluster.shape)
-            noisy_cluster = rotated_cluster + internal_shift
-            shifted_positions = noisy_cluster + shift
+            shifted_positions = rotated_cluster + shift
 
             all_positions.append(shifted_positions)
-            all_deltas.append(noisy_cluster)
+            all_deltas.append(rotated_cluster)
 
         return np.concatenate(all_positions, axis=0), all_deltas
+
+    def populate_cluster(self, cluster, num_additions=4):
+        cluster = cluster.copy()
+        for i in range(num_additions):
+            addition = np.random.normal(0, 0.003, size=(cluster.shape[0], 2))
+            addition = cluster[["x", "y"]].values + addition
+            cluster = pd.concat([cluster, pd.DataFrame(addition, columns=["x", "y"])])
+
+        return cluster
 
     def sample_random_cluster(self):
         """Sample a subset of the training data to represent a cluster."""
         cluster = self.training_data.copy()
-        return cluster.sample(frac=np.random.uniform(0.8, 1))[["x", "y"]].values
+        return cluster.sample(frac=np.random.uniform(0.055, 0.062))[["x", "y"]].values
 
     @staticmethod
     def apply_random_rotation(points):
