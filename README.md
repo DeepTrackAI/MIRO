@@ -16,6 +16,7 @@
 - **Multiscale Clustering:** **MIRO**’s recurrent structure allows for identifying patterns at different scales. 
 - **Broad Applicability:** **MIRO** is effective across datasets with diverse cluster shapes and symmetries.
 
+<!---
 ## Dependencies  
 **MIRO** is included as part of [deeplay](https://github.com/DeepTrackAI/deeplay). 
 
@@ -23,14 +24,25 @@ Install deeplay and unlock the full potential of **MIRO**.
 ```bash
 pip install deeplay
 ```
+-->
+
+## Getting Started with MIRO 
+
+Ready to dive into **MIRO**? Getting started is easy.
+
+Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/DeepTrackAI/MIRO.git
+```
+and unleash **MIRO**'s full potential.
 
 ## Citation
 If you use **MIRO** in your research, please cite our paper:
 ```
-@article{pineda2024miro,
+@article{pineda2024spatial,
   title={Spatial Clustering of Molecular Localizations with Graph Neural Networks},
-  author={Jesús Pineda, Sergi Masó-Orriols, Joan Bertran, Mattias Goksör, Giovanni Volpe, Carlo Manzo},
-  journal={arXiv},
+  author={Pineda, Jes{\'u}s and Mas{\'o}-Orriols, Sergi and Bertran, Joan and Goks{\"o}r, Mattias and Volpe, Giovanni and Manzo, Carlo},
+  journal={arXiv preprint arXiv:2412.00173},
   year={2024}
 }
 ```
