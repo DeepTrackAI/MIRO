@@ -30,11 +30,17 @@ pip install deeplay
 
 Ready to dive into **MIRO**? Getting started is easy.
 
-Clone the repository to your local machine:
+1. Make sure you have **Python 3.9** or higher installed.
+
+2. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/DeepTrackAI/MIRO.git
-```
-and unleash **MIRO**'s full potential.
+
+3. Install the necessary dependencies:
+   ```bash
+   pip install -r requirements.txt
+   
+Then unleash **MIRO**'s full potential.
 
 ## Citation
 If you use **MIRO** in your research, please cite our paper:
