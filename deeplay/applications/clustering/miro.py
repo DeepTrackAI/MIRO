@@ -43,6 +43,8 @@ class MIRO(Application):
         Dimensionality of the output features, representing a displacement
         vector in Cartesian space for each node. This vector points toward
         the center of each cluster.
+    num_iterations : int
+        Number of recurrent steps for the model to refine the point cloud.
     connectivity_radius : float
         Maximum distance between two nodes to consider them connected in the
         graph.
@@ -114,6 +116,7 @@ class MIRO(Application):
     def __init__(
         self,
         num_outputs: int = 2,
+        num_iterations: int = 20,
         connectivity_radius: float = 1.0,
         model: Optional[nn.Module] = None,
         nd_loss_weight: float = 10,
@@ -123,6 +126,7 @@ class MIRO(Application):
     ):
 
         self.num_outputs = num_outputs
+        self.num_iterations = num_iterations
         self.connectivity_radius = connectivity_radius
         self.model = model or self._get_default_model()
         self.nd_loss_weight = nd_loss_weight
@@ -131,7 +135,9 @@ class MIRO(Application):
 
     def _get_default_model(self):
         rgnn = RecurrentMessagePassingModel(
-            hidden_features=256, out_features=self.num_outputs, num_iter=20
+            hidden_features=256,
+            out_features=self.num_outputs,
+            num_iter=self.num_iterations,
         )
         return rgnn
 

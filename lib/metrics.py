@@ -10,6 +10,7 @@ from sklearn.metrics import (
 )
 import matplotlib.pyplot as plt
 import scipy.spatial as sp
+import tqdm
 
 
 def create_mask(hull_points, mask_dim, xmin, xmax, ymin, ymax):
@@ -563,7 +564,7 @@ def calculate_metrics_for_experiments(df):
     all_results = []
 
     # Iterate over each unique experiment in the 'set' column
-    for experiment in df["set"].unique():
+    for experiment in tqdm.tqdm_notebook(df["set"].unique()):
         # Filter the DataFrame for the current experiment
         experiment_data = df[df["set"] == experiment]
 

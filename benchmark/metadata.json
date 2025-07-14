@@ -1,0 +1,376 @@
+{
+  "Ground Truth - Scenario 2": {
+    "training_indices": [32, 19, 46],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [250, 350],
+      "cluster_count_range": [10, 20],
+      "connectivity_radius": 0.2
+    },
+    "recurrent_iterations": 12,
+    "checkpoint": "models/model_scenario_2.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 40.06,
+      "min_samples": 13
+    },
+    "DBSCAN_params": {
+      "eps": 45,
+      "min_samples": 7
+    }
+  },
+  "Ground Truth - Scenario 3": {
+    "training_indices": [39, 48, 8],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [450, 550],
+      "cluster_count_range": [15, 25],
+      "connectivity_radius": 0.2,
+      "pupulation_std_sigma": 0.003
+    },
+    "recurrent_iterations": 12,
+    "checkpoint": "models/model_scenario_3.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 15.58,
+      "min_samples": 12
+    },
+    "DBSCAN_params": {
+      "eps": 30,
+      "min_samples": 10
+    }
+  },
+  "Ground Truth - Scenario 4": {
+    "training_indices": [35, 45, 30],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [150, 250],
+      "cluster_count_range": [25, 35],
+      "connectivity_radius": 0.2
+    },
+    "recurrent_iterations": 12,
+    "checkpoint": "models/model_scenario_4.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 52.28,
+      "min_samples": 5
+    },
+    "DBSCAN_params": {
+      "eps": 50,
+      "min_samples": 4
+    }
+  },
+  "Ground Truth - Scenario 5": {
+    "training_indices": [15, 30, 4],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [750, 850],
+      "cluster_count_range": [85, 90],
+      "connectivity_radius": 0.1,
+      "cluster_sampling_range": [0.035, 0.035],
+      "pupulation_std_sigma": 0.003,
+      "num_additions": 5
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/model_scenario_5.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 26,
+      "min_samples": 13
+    },
+    "DBSCAN_params": {
+      "eps": 35,
+      "min_samples": 8
+    }
+  },
+  "Ground Truth - Scenario 6": {
+    "training_indices": [25, 15, 8],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [450, 550],
+      "cluster_count_range": [10, 20],
+      "connectivity_radius": 0.2
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/model_scenario_6.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 16,
+      "min_samples": 10
+    },
+    "DBSCAN_params": {
+      "eps": 30,
+      "min_samples": 6
+    }
+  },
+  "Ground Truth - Scenario 7": {
+    "training_indices": [25, 15, 8],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [150, 250],
+      "cluster_count_range": [15, 25],
+      "connectivity_radius": 0.2
+    },
+    "recurrent_iterations": 12,
+    "checkpoint": "models/model_scenario_7.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 67.97,
+      "min_samples": 8
+    },
+    "DBSCAN_params": {
+      "eps": 65,
+      "min_samples": 6
+    }
+  },
+  "Ground Truth - Scenario 8": {
+    "training_indices": [32, 48, 28],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [150, 250],
+      "cluster_count_range": [10, 20],
+      "connectivity_radius": 0.2,
+      "cluster_sampling_range": [1, 1],
+      "pupulation_std_sigma": 0,
+      "num_additions": 0
+    },
+    "recurrent_iterations": 12,
+    "checkpoint": "models/model_scenario_8.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 40.62,
+      "min_samples": 4
+    },
+    "DBSCAN_params": {
+      "eps": 50,
+      "min_samples": 4
+    }
+  },
+  "Ground Truth - Scenario 9": {
+    "training_indices": [5, 2, 20],
+    "builder": "GraphBlinkingCroppedDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "connectivity_radius": 0.1
+    },
+    "recurrent_iterations": 20,
+    "checkpoint": "models/model_scenario_9.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 13,
+      "min_samples": 6
+    },
+    "DBSCAN_params": {
+      "eps": 45,
+      "min_samples": 12
+    }
+  },
+  "Ground Truth - Scenario 10": {
+    "training_indices": [18, 13, 4],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [150, 250],
+      "cluster_count_range": [10, 20],
+      "connectivity_radius": 0.2
+    },
+    "recurrent_iterations": 12,
+    "checkpoint": "models/model_scenario_10.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 34.02,
+      "min_samples": 7
+    },
+    "DBSCAN_params": {
+      "eps": 45,
+      "min_samples": 7
+    }
+  },
+  "Multiple Blinking - Scenario 2": {
+    "training_indices": [23, 36, 35],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "cluster_count_range": [30, 40],
+      "connectivity_radius": 0.1,
+      "background_sampling_range": [0.03, 0.03]
+    },
+    "recurrent_iterations": 25,
+    "checkpoint": "models/model_scenario_2_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 20.01,
+      "min_samples": 38
+    },
+    "DBSCAN_params": {
+      "eps": 50,
+      "min_samples": 35
+    }
+  },
+  "Multiple Blinking - Scenario 3": {
+    "training_indices": [48, 22, 21],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "cluster_count_range": [40, 50],
+      "connectivity_radius": 0.1,
+      "background_sampling_range": [0.009, 0.009]
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/model_scenario_3_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 9.92,
+      "min_samples": 50
+    },
+    "DBSCAN_params": {
+      "eps": 45,
+      "min_samples": 50
+    }
+  },
+  "Multiple Blinking - Scenario 4": {
+    "training_indices": [35, 38, 39],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "cluster_count_range": [30, 40],
+      "connectivity_radius": 0.1,
+      "background_sampling_range": [0.01, 0.012],
+      "background_std_population": 0.003
+    },
+    "recurrent_iterations": 25,
+    "checkpoint": "models/model_scenario_4_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 31.45,
+      "min_samples": 23
+    },
+    "DBSCAN_params": {
+      "eps": 60,
+      "min_samples": 25
+    }
+  },
+  "Multiple Blinking - Scenario 5": {
+    "training_indices": [25, 27, 32],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 500,
+      "cluster_count_range": [65, 66],
+      "connectivity_radius": 0.1,
+      "background_sampling_range": [0.3, 0.3],
+      "cluster_sampling_range": [0.8, 0.95],
+      "cluster_std_sigma": 0,
+      "num_cluster_additions": 0,
+      "num_bkg_additions": 0
+    },
+    "recurrent_iterations": 10,
+    "checkpoint": "models/model_scenario_5_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 22,
+      "min_samples": 42
+    },
+    "DBSCAN_params": {
+      "eps": 35,
+      "min_samples": 34
+    }
+  },
+  "Multiple Blinking - Scenario 6": {
+    "training_indices": [25, 27, 32],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "cluster_count_range": [20, 22],
+      "connectivity_radius": 0.1,
+      "background_sampling_range": [0.4, 0.6],
+      "cluster_sampling_range": [0.8, 1.0],
+      "cluster_std_sigma": 0,
+      "num_cluster_additions": 0,
+      "num_bkg_additions": 0
+    },
+    "recurrent_iterations": 25,
+    "checkpoint": "models/model_scenario_6_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 31.34,
+      "min_samples": 63
+    },
+    "DBSCAN_params": {
+      "eps": 40,
+      "min_samples": 42
+    }
+  },
+  "Multiple Blinking - Scenario 7": {
+    "training_indices": [10, 29, 39],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "cluster_count_range": [25, 26],
+      "connectivity_radius": 0.1,
+      "background_sampling_range": [0.4, 0.4],
+      "cluster_sampling_range": [0.95, 1.0],
+      "num_cluster_additions": 0,
+      "num_bkg_additions": 0
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/model_scenario_7_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 53.73,
+      "min_samples": 35
+    },
+    "DBSCAN_params": {
+      "eps": 65,
+      "min_samples": 32
+    }
+  },
+  "Multiple Blinking - Scenario 8": {
+    "training_indices": [49, 16, 34],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "cluster_count_range": [30, 40],
+      "connectivity_radius": 0.1
+    },
+    "recurrent_iterations": 20,
+    "checkpoint": "models/model_scenario_8_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 20,
+      "min_samples": 30
+    },
+    "DBSCAN_params": {
+      "eps": 50,
+      "min_samples": 27
+    }
+  },
+  "Multiple Blinking - Scenario 9": {
+    "training_indices": [21, 35, 23],
+    "builder": "GraphBlinkingCroppedDataset",
+    "builder_kwargs": {
+      "dataset_size": 1000,
+      "connectivity_radius": 0.1
+    },
+    "recurrent_iterations": 25,
+    "checkpoint": "models/model_scenario_9_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 23,
+      "min_samples": 55
+    },
+    "DBSCAN_params": {
+      "eps": 45,
+      "min_samples": 50
+    }
+  },
+  "Multiple Blinking - Scenario 10": {
+    "training_indices": [28, 16, 5],
+    "builder": "GraphBlinkingDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "cluster_count_range": [30, 40],
+      "connectivity_radius": 0.1,
+      "background_std_population": 0.004
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/model_scenario_10_blinking.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 20.71,
+      "min_samples": 38
+    },
+    "DBSCAN_params": {
+      "eps": 50,
+      "min_samples": 33
+    }
+  }
+}
