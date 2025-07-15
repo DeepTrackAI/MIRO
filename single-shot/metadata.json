@@ -1,0 +1,47 @@
+{
+  "Ground Truth - Scenario 5": {
+    "training_cluster_path": "data/training_cluster_scenario_5.csv",
+    "training_indices": [15, 30, 4],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [750, 850],
+      "cluster_count_range": [85, 90],
+      "connectivity_radius": 0.1,
+      "cluster_sampling_range": [0.035, 0.035],
+      "pupulation_std_sigma": 0.003,
+      "num_additions": 5
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/single_shot_model_scenario_5.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 26,
+      "min_samples": 13
+    },
+    "DBSCAN_params": {
+      "eps": 35,
+      "min_samples": 8
+    }
+  },
+  "Ground Truth - Scenario 6": {
+    "training_cluster_path": "data/training_cluster_scenario_6.csv",
+    "training_indices": [25, 15, 8],
+    "builder": "GraphDataset",
+    "builder_kwargs": {
+      "dataset_size": 1500,
+      "noise_point_range": [450, 550],
+      "cluster_count_range": [10, 20],
+      "connectivity_radius": 0.2
+    },
+    "recurrent_iterations": 15,
+    "checkpoint": "models/single_shot_model_scenario_6.pt",
+    "MIRO_DBSCAN_params": {
+      "eps": 16,
+      "min_samples": 10
+    },
+    "DBSCAN_params": {
+      "eps": 30,
+      "min_samples": 6
+    }
+  }
+}
