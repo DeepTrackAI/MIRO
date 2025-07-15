@@ -10,3 +10,6 @@ scipy
 scikit-image
 rich
 dill
+pandas
+tqdm
+sklearn
