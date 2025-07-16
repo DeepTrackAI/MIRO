@@ -469,12 +469,20 @@ class Application(DeeplayModule, L.LightningModule):
 
     def _configure_batch(self, batch: Any) -> Any:
         if isinstance(batch, (dict, Data)):
-            assert "y" in batch, (
-                "The batch should contain a 'y' key corresponding to the labels."
-                "Found {}".format([key for key, _ in batch.items()])
+            keys = list(batch.keys())
+            assert "y" in keys, (
+                "The batch should contain a 'y' tensor. " f"Found {keys}"
             )
             self._infer_batch_size_from_batch_indices(batch)
-            y = batch.pop("y")
+
+            y_keys = [k for k in keys if k == "y" or k.startswith("y_")]
+            if len(y_keys) > 1:
+                y_dict = {k: batch[k] for k in y_keys}
+                for k in y_keys:
+                    del batch[k]
+                y = Data(**y_dict)
+            else:
+                y = batch.pop("y")
             return batch, y
 
         return batch
