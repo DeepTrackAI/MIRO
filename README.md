@@ -6,7 +6,7 @@
 **MIRO** learns to pull together localizations belonging to the same structure, producing spatially compact, well-separated clusters. This transformation enables standard algorithms like DBSCAN to perform significantly better — especially in challenging scenarios involving varying densities, blinking artifacts, or multiple cluster types.
 
 <div align="center"; style="background-color: white; padding: 10px; display: inline-block;">
-  <img src="assets/MIRO.png" width="500"/>
+  <img src="assets/MIROw.png" width="500"/>
 </div>
 
 ## Key Features  
