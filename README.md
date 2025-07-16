@@ -46,7 +46,7 @@ To install MIRO and its dependencies:
 
 Explore MIRO's capabilities through interactive Jupyter notebooks:
 
-- **Benchmark:** Reproduce MIRO's performance on the benchmark datasets from [Nieves et al.](https://github.com/DJ-Nieves/ARI-and-IoU-cluster-analysis-evaluation). Follow the [Benchmark Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/benchmark/tutorial.ipynb) to train your own model or load pretrained ones.
+- **Benchmark:** Reproduce MIRO's performance on the benchmark datasets from [Nieves et al.](https://github.com/DJ-Nieves/ARI-and-IoU-cluster-analysis-evaluation) Follow the [Benchmark Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/benchmark/tutorial.ipynb) to train your own model or load pretrained ones.
 
 - **Single-Shot Learning:** See how MIRO achieves impressive results even when trained on a single cluster. Try it yourself in the [Single-Shot Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/single-shot/tutorial.ipynb).
 
