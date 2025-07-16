@@ -42,16 +42,17 @@ To install MIRO and its dependencies:
 
 **MIRO** is included as part of [deeplay](https://github.com/DeepTrackAI/deeplay), a modular framework for deep learning.
 
-## Tutorials
-Get a hands-on experience with MIRO through the notebooks. 
+## 📘 Tutorials
 
--**Benchmark:** Reproduce MIRO's performance on benchmark datasets from [Nieves et al](https://github.com/DJ-Nieves/ARI-and-IoU-cluster-analysis-evaluation), following the [Benchmark Notebook](https://github.com/DeepTrackAI/MIRO/blob/master/benchmark/tutorial.ipynb) for training your model or loading pretrained models.
+Explore MIRO's capabilities through interactive Jupyter notebooks:
 
--**Single Shot:** [Single-Shot Notebook](https://github.com/DeepTrackAI/MIRO/blob/master/singleshot/tutorial.ipynb)
+- **Benchmark:** Reproduce MIRO's performance on the benchmark datasets from [Nieves et al.](https://github.com/DJ-Nieves/ARI-and-IoU-cluster-analysis-evaluation). Follow the [Benchmark Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/benchmark/tutorial.ipynb) to train your own model or load pretrained ones.
 
--**Multiscale:**
+- **Single-Shot Learning:** See how MIRO achieves impressive results even when trained on a single cluster. Try it yourself in the [Single-Shot Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/single-shot/tutorial.ipynb).
 
--**Multishape:**
+- **Multiscale Clustering:** Perform simultaneous clustering of nested structures with the [Multiscale Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/multiscale/tutorial.ipynb).
+
+- **Multishape Clustering and Classification:** Learn how MIRO can cluster and classify structures of different shapes using the [Multishape Tutorial](https://github.com/DeepTrackAI/MIRO/blob/master/multishape/tutorial.ipynb).
 
 ## Citation
 If you use **MIRO** in your research, please cite:
