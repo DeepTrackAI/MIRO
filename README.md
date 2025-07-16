@@ -45,7 +45,7 @@ To install MIRO and its dependencies:
 ## Tutorials
 Get a hands-on experience with MIRO through the notebooks. 
 
--**Benchmark:** Reproduce MIRO's performance on benchmark dataset, following the [Benchmark Notebook](https://github.com/DeepTrackAI/MIRO/benchmark/tutorial.ipynb) for training your model or loading pretrained models.
+-**Benchmark:** Reproduce MIRO's performance on benchmark dataset, following the [Benchmark Notebook](https://github.com/DeepTrackAI/MIRO/blob/main/benchmark/tutorial.ipynb) for training your model or loading pretrained models.
 
 -**Single Shot:**
 
