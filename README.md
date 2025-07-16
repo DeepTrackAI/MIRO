@@ -1,15 +1,15 @@
 # Spatial Clustering of Molecular Localizations with MIRO
 
-**MIRO** (Multifunctional Integration through Relational Optimization) is a geometric deep learning framework that enhances clustering algorithms by transforming complex point clouds into an optimized structure amenable to conventional clustering methods. 
+**MIRO** (Multifunctional Integration through Relational Optimization) is a geometric deep learning framework that enhances clustering algorithms by transforming complex point clouds into structured, compact representations. It enables more robust clustering of single-molecule localization data using recurrent graph neural networks (rGNNs).
 
 ## How it works?
-**MIRO** employs recurrent graph neural networks (rGNNs) to learn a transformation that squeezes localization belonging to the same cluster toward a common center, resulting in a compact representation of clusters within the point cloud.
+**MIRO** learns to pull together localizations belonging to the same structure, producing spatially compact, well-separated clusters. This transformation enables standard algorithms like DBSCAN to perform significantly better — especially in challenging scenarios involving varying densities, blinking artifacts, or multiple cluster types.
 
 <div align="center">
-  <img src="assets/MIRO.png" width="500"/>
+  <img src="assets/MIRO.png" width="500" bkg="white"/>
 </div>
 
-## Potential of MIRO  
+## Key Features  
 - **Improved Clustering Performance:** MIRO increases the efficiency of existing clustering algorithms by transforming point clouds into an optimized format.  
 - **Simplified Parameter Selection:** By enhancing the differentiation among clusters and their separation from the background, **MIRO** streamlines parameter selection for clustering methods like DBSCAN.
 - **Single-Shot and Few-Shot Learning:** **MIRO**’s single- or few-shot learning capability allows it to generalize across scenarios with minimal training, making it highly efficient and versatile.
@@ -26,9 +26,9 @@ pip install deeplay
 ```
 -->
 
-## Getting Started with MIRO 
+## Installation
 
-Ready to dive into **MIRO**? Getting started is easy.
+To install MIRO and its dependencies:
 
 1. Make sure you have **Python 3.9** or higher installed.
 
@@ -39,11 +39,22 @@ Ready to dive into **MIRO**? Getting started is easy.
 3. Install the necessary dependencies:
    ```bash
    pip install -r requirements.txt
-   
-Then unleash **MIRO**'s full potential.
+
+**MIRO** is included as part of [deeplay](https://github.com/DeepTrackAI/deeplay), a modular framework for deep learning.
+
+## Tutorials
+Get a hands-on experience with MIRO through the notebooks 
+
+-**Benchmark:** Reproduce MIRO's performance on benchmark dataset, either training your model or loading pretrained models
+
+-**Single Shot:**
+
+-**Multiscale:**
+
+-**Multishape:**
 
 ## Citation
-If you use **MIRO** in your research, please cite our paper:
+If you use **MIRO** in your research, please cite:
 ```
 @article{pineda2024spatial,
   title={Spatial Clustering of Molecular Localizations with Graph Neural Networks},
