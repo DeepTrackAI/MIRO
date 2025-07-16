@@ -689,20 +689,19 @@ class GraphBlinkingCroppedDataset:
         return points_flipped + mean
 
 
-def compute_test_graph(data, builder):
+def compute_test_graph(data, builder, norm=True):
     # Extract position data from the test dataset
     position = data[["x", "y"]].values
 
     # Normalize the position coordinates to the range [0, 1]
-    normalized_position = (position - position.min(axis=0)) / (
-        position.max(axis=0) - position.min(axis=0)
-    )
+    if norm:
+        position = (position - position.min(axis=0)) / (
+            position.max(axis=0) - position.min(axis=0)
+        )
 
     # Initialize the graph data structure
     test_graph = Data(
-        position=torch.tensor(
-            normalized_position, dtype=torch.float32
-        ),  # Node positions
+        position=torch.tensor(position, dtype=torch.float32),  # Node positions
         num_nodes=position.shape[0],  # Number of nodes
     )
 
