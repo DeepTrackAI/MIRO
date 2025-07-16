@@ -184,7 +184,8 @@ class MIRO(Application):
         np.ndarray
             Squeezed point cloud with optimized cluster alignment.
         """
-        predicted_displacements = self(x)[from_iter].detach().cpu().numpy()
+        with torch.no_grad():
+            predicted_displacements = self(x)[from_iter].detach().cpu().numpy()
         positions = x.position.cpu().numpy()
         squeezed_positions = (
             positions - predicted_displacements * self.connectivity_radius
