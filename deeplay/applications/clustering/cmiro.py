@@ -27,8 +27,8 @@ from .miro import MIRO
 
 
 class cMIRO(MIRO):
-    """Point cloud clustering using MIRO (Multimodal Integration through
-    Relational Optimization).
+    """Point cloud clustering and shape classification using MIRO (Multimodal
+    Integration through Relational Optimization).
 
     MIRO is a geometric deep learning framework that enhances clustering
     algorithms by transforming complex point clouds into an optimized structure
