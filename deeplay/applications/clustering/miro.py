@@ -106,6 +106,7 @@ class MIRO(Application):
     """
 
     num_outputs: int
+    num_iterations: int
     connectivity_radius: float
     model: nn.Module
     nd_loss_weight: float
