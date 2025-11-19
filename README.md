@@ -57,11 +57,15 @@ Explore MIRO's capabilities through interactive Jupyter notebooks:
 ## Citation
 If you use **MIRO** in your research, please cite:
 ```
-@article{pineda2024spatial,
-  title={Spatial Clustering of Molecular Localizations with Graph Neural Networks},
-  author={Pineda, Jes{\'u}s and Mas{\'o}-Orriols, Sergi and Bertran, Joan and Goks{\"o}r, Mattias and Volpe, Giovanni and Manzo, Carlo},
-  journal={arXiv preprint arXiv:2412.00173},
-  year={2024}
+@article{pineda2025enhanced,
+  title={Enhanced spatial clustering of single-molecule localizations with graph neural networks},
+  author={Pineda, Jes{\'u}s and Mas{\'o}-Orriols, Sergi and Masoliver, Montse and Bertran, Joan and Goks{\"o}r, Mattias and Volpe, Giovanni and Manzo, Carlo},
+  journal={Nature Communications},
+  volume={16},
+  number={1},
+  pages={9693},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
